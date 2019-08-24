@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
-import { SearchResult } from './search-result';
+import { SearchResult } from '@common/modals/search-result';
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',

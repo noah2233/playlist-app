@@ -1,4 +1,8 @@
-<div class="sort"></div>
+<div class="sort">
+  <select>
+    <option *ngFor="let sortByOption of sortByOptions">{{sortByOption.value}}</option>
+  </select>
+</div>
 <ul class="track-list">
   <li class="track-list-item"></li>
 </ul>

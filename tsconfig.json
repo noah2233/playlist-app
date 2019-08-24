@@ -12,6 +12,9 @@
       "@shared/*": [
         "app/shared/*"
       ],
+      "@common/*": [
+        "app/common/*"
+      ],
       "@services/*": [
         "app/services/*"
       ],
