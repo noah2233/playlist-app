@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
-import { SortByOption } from '@common/modals/sort-by-option';
+import { SortByOption, Track } from '@common/modals';
 
 import { orderBy } from 'loadsh';
 @Component({
@@ -12,6 +12,7 @@ import { orderBy } from 'loadsh';
 export class TrackListComponent implements OnInit {
   sortByOptions: SortByOption[] = [];
   sortByForm: FormGroup;
+  trackList: Track[] = [];
 
   constructor(
     private _formBuilder: FormBuilder) { }

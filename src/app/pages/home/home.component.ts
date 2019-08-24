@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
-import { SearchResult } from '@common/modals/search-result';
+import { Track } from '@common/modals';
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
@@ -9,7 +9,7 @@ import { SearchResult } from '@common/modals/search-result';
 })
 export class HomeComponent implements OnInit {
   searchForm: FormGroup;
-  searchResults: SearchResult[] = [
+  searchResults: Track[] = [
     { track_id: 1, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
     { track_id: 2, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
     { track_id: 3, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
