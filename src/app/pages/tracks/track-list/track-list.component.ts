@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
 import { SortByOption } from '@common/modals/sort-by-option';
+
+import { orderBy } from 'loadsh';
 @Component({
   selector: 'track-list',
   templateUrl: './track-list.component.html',
@@ -8,8 +11,10 @@ import { SortByOption } from '@common/modals/sort-by-option';
 })
 export class TrackListComponent implements OnInit {
   sortByOptions: SortByOption[] = [];
+  sortByForm: FormGroup;
 
-  constructor() { }
+  constructor(
+    private _formBuilder: FormBuilder) { }
 
   ngOnInit() {
     this.initSortBy();
@@ -21,8 +26,17 @@ export class TrackListComponent implements OnInit {
       { key: 2, value: 'Track Name' },
       { key: 3, value: 'Artist Name' },
       { key: 4, value: 'Album Name' },
-      { key: 5, value: 'Track Length' },
+      { key: 5, value: 'Track Length' }
     ];
+
+    // order list
+    this.sortByOptions = orderBy(this.sortByOptions, ['value']);
+
+    // init form
+    this.sortByForm = this._formBuilder.group({ sortBy: new FormControl('') });
+
+    // init default value
+    this.sortByForm.controls['sortBy'].setValue(this.sortByOptions.find((sortByOption) => sortByOption.key === 1));
   }
 
 }

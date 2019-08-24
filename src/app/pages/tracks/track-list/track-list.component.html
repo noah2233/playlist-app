@@ -1,7 +1,11 @@
 <div class="sort">
-  <select>
-    <option *ngFor="let sortByOption of sortByOptions">{{sortByOption.value}}</option>
-  </select>
+  <form [formGroup]="sortByForm">
+    <select formControlName="sortBy">
+      <option *ngFor="let sortByOption of sortByOptions" [ngValue]="sortByOption">
+        {{sortByOption.value}}
+      </option>
+    </select>
+  </form>
 </div>
 <ul class="track-list">
   <li class="track-list-item"></li>
