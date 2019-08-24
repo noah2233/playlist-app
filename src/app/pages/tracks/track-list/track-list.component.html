@@ -1,4 +1,8 @@
-<div class="sort">
+<div class="sortBy">
+  <i class="fas fa-filter"></i>
+  &nbsp;
+  <span>SORT BY:</span>
+  &nbsp;
   <form [formGroup]="sortByForm">
     <select formControlName="sortBy">
       <option *ngFor="let sortByOption of sortByOptions" [ngValue]="sortByOption">

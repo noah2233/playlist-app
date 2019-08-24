@@ -1,3 +1,12 @@
+.sortBy {
+    display: flex;
+    align-items: center;
+}
+
+.sortBy i {
+    color: #FF3C58;
+}
+
 .track-list {
     list-style: none;
 }
