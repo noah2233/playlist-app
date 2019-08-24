@@ -1,0 +1,12 @@
+header {
+    background: #eee;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    background: url('/assets/images/shared/site-header/logo.svg') no-repeat;
+    width: 176px;
+    height: 40px;
+}
