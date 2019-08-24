@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
+import { SearchResult } from './search-result';
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
@@ -8,6 +9,12 @@ import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
   searchForm: FormGroup;
+  searchResults: SearchResult[] = [
+    { track_id: 1, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
+    { track_id: 2, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
+    { track_id: 3, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
+    { track_id: 4, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' }
+  ];
 
   constructor(
     private _formBuilder: FormBuilder) { }

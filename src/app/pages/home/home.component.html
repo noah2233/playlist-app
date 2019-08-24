@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="searchForm-and-results">
+  <div class="searchForm-container">
     <form [formGroup]="searchForm">
       <div class="input-group">
         <input class="form-control" formControlName="search" autocomplete="off" />
@@ -8,8 +8,10 @@
         </div>
       </div>
     </form>
-    <ul class="results">
-      <li class="result"></li>
+    <ul class="search-results">
+      <li class="search-result" *ngFor="let searchResult of searchResults">
+        {{searchResult.artist_name}}, {{searchResult.album_name}} - {{searchResult.track_name}}
+      </li>
     </ul>
   </div>
   <track-list></track-list>
