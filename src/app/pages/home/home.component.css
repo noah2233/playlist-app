@@ -17,6 +17,8 @@
     position: absolute;
     width: 100%;
     top: 100%;
+    /* hide for now */
+    display: none;
 }
 
 .search-results .search-result {
