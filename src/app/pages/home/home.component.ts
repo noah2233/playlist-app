@@ -10,10 +10,10 @@ import { Track } from '@common/modals';
 export class HomeComponent implements OnInit {
   searchForm: FormGroup;
   searchResults: Track[] = [
-    { track_id: 1, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
-    { track_id: 2, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
-    { track_id: 3, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' },
-    { track_id: 4, artist_name: 'The Jackson 5', track_name: 'Reach In', album_name: 'Third Album' }
+    { track_id: 1, track_duration: 0, artist_name: 'The Jackson 5', track_name: 'Reach In', album: null },
+    { track_id: 2, track_duration: 0, artist_name: 'The Jackson 5', track_name: 'Reach In', album: null },
+    { track_id: 3, track_duration: 0, artist_name: 'The Jackson 5', track_name: 'Reach In', album: null },
+    { track_id: 4, track_duration: 0, artist_name: 'The Jackson 5', track_name: 'Reach In', album: null }
   ];
 
   constructor(
