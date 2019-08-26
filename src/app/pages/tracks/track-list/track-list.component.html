@@ -12,5 +12,15 @@
   </form>
 </div>
 <ul class="track-list">
-  <li class="track-list-item" *ngFor="let trackListItem of trackList"></li>
+  <li class="track-list-item" *ngFor="let trackListItem of trackList">
+    <div class="track-list-item-cover" [style.background-image]="getTrackListItemCover(trackListItem)"></div>
+    <div class="track-list-item-bottom">
+      <div class="track-list-item-details">
+        <div class="track-list-item-artist-name"></div>
+        <div class="track-list-item-track-name"></div>
+        <div class="track-list-item-album-name"></div>
+      </div>
+      <div class="track-list-item-delete"></div>
+    </div>
+  </li>
 </ul>

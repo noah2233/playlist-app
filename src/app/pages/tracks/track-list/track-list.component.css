@@ -9,4 +9,18 @@
 
 .track-list {
     list-style: none;
+    display: flex;
+    margin-top: 30px;
+}
+
+.track-list .track-list-item {
+    cursor: pointer;
+}
+
+.track-list .track-list-item .track-list-item-cover {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 250px;
+    min-height: 250px;
 }

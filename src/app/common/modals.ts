@@ -2,7 +2,6 @@ export interface SearchResult {
     track_id: number;
     track_name: string;
     artist_name: string;
-    cover: string;
 }
 export interface SortByOption {
     key: number;
@@ -18,7 +17,7 @@ export interface Track {
 }
 
 export interface Album {
-    name: string;
+    title: string;
     cover_small: string;
     cover_medium: string;
     cover_big: string;
