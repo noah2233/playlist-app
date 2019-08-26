@@ -1,3 +1,9 @@
+export interface SearchResult {
+    track_id: number;
+    track_name: string;
+    artist_name: string;
+    cover: string;
+}
 export interface SortByOption {
     key: number;
     value: string;
