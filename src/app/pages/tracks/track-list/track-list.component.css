@@ -25,3 +25,13 @@
     min-width: 250px;
     min-height: 250px;
 }
+
+.track-list .track-list-item .track-list-item-artist-name, .track-list .track-list-item .track-list-item-track-name {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline;
+}
+
+.track-list .track-list-item .track-list-item-album-name {
+    font-size: 12px;
+}
