@@ -25,6 +25,45 @@ export class TrackListComponent implements OnInit {
         cover_big: '',
         cover_xl: ''
       }
+    },
+    {
+      track_id: 2,
+      artist_name: 'The Jackson 5',
+      track_name: 'Reach In',
+      track_duration: 0,
+      album: {
+        title: 'The Definitive Collection',
+        cover_small: '',
+        cover_medium: 'https://cdns-images.dzcdn.net/images/cover/6097a6304e58084181a2419595d88945/250x250-000000-80-0-0.jpg',
+        cover_big: '',
+        cover_xl: ''
+      }
+    },
+    {
+      track_id: 3,
+      artist_name: 'The Jackson 5',
+      track_name: 'Reach In',
+      track_duration: 0,
+      album: {
+        title: 'The Definitive Collection',
+        cover_small: '',
+        cover_medium: 'https://cdns-images.dzcdn.net/images/cover/6097a6304e58084181a2419595d88945/250x250-000000-80-0-0.jpg',
+        cover_big: '',
+        cover_xl: ''
+      }
+    },
+    {
+      track_id: 4,
+      artist_name: 'The Jackson 5',
+      track_name: 'Reach In',
+      track_duration: 0,
+      album: {
+        title: 'The Definitive Collection',
+        cover_small: '',
+        cover_medium: 'https://cdns-images.dzcdn.net/images/cover/6097a6304e58084181a2419595d88945/250x250-000000-80-0-0.jpg',
+        cover_big: '',
+        cover_xl: ''
+      }
     }
   ];
 

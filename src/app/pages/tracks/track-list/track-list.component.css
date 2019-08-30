@@ -10,12 +10,14 @@
 .track-list {
     list-style: none;
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .track-list .track-list-item {
     cursor: pointer;
+    margin: 15px;
 }
 
 .track-list .track-list-item .track-list-item-cover {
