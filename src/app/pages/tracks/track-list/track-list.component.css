@@ -28,12 +28,29 @@
     min-height: 250px;
 }
 
-.track-list .track-list-item .track-list-item-artist-name, .track-list .track-list-item .track-list-item-track-name {
+.track-list .track-list-item .track-list-item-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.track-list .track-list-item .track-list-item-bottom .track-list-item-details .track-list-item-artist-name, .track-list .track-list-item .track-list-item-bottom .track-list-item-details .track-list-item-track-name {
     font-size: 14px;
     font-weight: bold;
     display: inline;
 }
 
-.track-list .track-list-item .track-list-item-album-name {
+.track-list .track-list-item .track-list-item-bottom .track-list-item-details .track-list-item-album-name {
     font-size: 12px;
+}
+
+.track-list .track-list-item .track-list-item-bottom .track-list-item-delete {
+    padding: 5px 5px 0 0;
+}
+
+.track-list .track-list-item .track-list-item-bottom .track-list-item-delete i {
+    display: block;
+}
+
+.track-list .track-list-item .track-list-item-bottom .track-list-item-delete i:hover {
+    color: #FF3C58;
 }
