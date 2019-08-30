@@ -14,6 +14,7 @@ export interface Track {
     track_name: string;
     album: Album;
     artist_name: string;
+    date_added: Date;
 }
 
 export interface Album {

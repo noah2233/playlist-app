@@ -15,6 +15,7 @@ export class TrackListComponent implements OnInit {
   trackList: Track[] = [
     {
       track_id: 1,
+      date_added: new Date(),
       artist_name: 'The Jackson 5',
       track_name: 'Reach In',
       track_duration: 0,
@@ -28,6 +29,7 @@ export class TrackListComponent implements OnInit {
     },
     {
       track_id: 2,
+      date_added: new Date(),
       artist_name: 'The Jackson 5',
       track_name: 'Reach In',
       track_duration: 0,
@@ -41,6 +43,7 @@ export class TrackListComponent implements OnInit {
     },
     {
       track_id: 3,
+      date_added: new Date(),
       artist_name: 'The Jackson 5',
       track_name: 'Reach In',
       track_duration: 0,
@@ -54,6 +57,7 @@ export class TrackListComponent implements OnInit {
     },
     {
       track_id: 4,
+      date_added: new Date(),
       artist_name: 'The Jackson 5',
       track_name: 'Reach In',
       track_duration: 0,
