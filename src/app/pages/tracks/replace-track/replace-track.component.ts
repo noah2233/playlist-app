@@ -76,11 +76,18 @@ export class ReplaceTrackComponent implements OnInit {
 
   ngOnInit() {
     this.initReplaceForm();
+    this.initReplaceSelect();
   }
 
   initReplaceForm() {
     this.replaceForm = this._formBuilder.group(
       { replace: new FormControl('') }
     );
+  }
+
+  initReplaceSelect() {
+    // get the list
+    // sort by date
+    // init values
   }
 }
