@@ -12,13 +12,15 @@ import { SiteHeaderComponent } from '@shared/site-header/site-header.component';
 import { HomeComponent } from '@pages/home/home.component';
 import { TrackComponent } from '@pages/tracks/track/track.component';
 import { TrackListComponent } from '@pages/tracks/track-list/track-list.component';
+import { ReplaceTrackComponent } from './pages/tracks/replace-track/replace-track.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TrackComponent,
     SiteHeaderComponent,
-    TrackListComponent
+    TrackListComponent,
+    ReplaceTrackComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { TrackListComponent } from '@pages/tracks/track-list/track-list.componen
     FormsModule
   ],
   providers: [],
+  entryComponents: [ReplaceTrackComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
