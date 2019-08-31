@@ -5,6 +5,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// plugin
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+
 // shared
 import { SiteHeaderComponent } from '@shared/site-header/site-header.component';
 
@@ -26,7 +29,8 @@ import { ReplaceTrackComponent } from './pages/tracks/replace-track/replace-trac
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgbModalModule
   ],
   providers: [],
   entryComponents: [ReplaceTrackComponent],
