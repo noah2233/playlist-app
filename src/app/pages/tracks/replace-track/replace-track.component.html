@@ -1,3 +1,18 @@
-<p>
-  replace-track works!
-</p>
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Replace Track</h4>
+  <button type="button" class="close" aria-label="Close" (click)="ngbActiveModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <h6>The list is full, please select the track to replace</h6>
+  <form [formGroup]="replaceForm">
+    <select class="form-control" formControlName="replace">
+      <option *ngFor="let track of tracks">{{track.artist_name}}-{{track.track_name}}</option>
+    </select>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="ngbActiveModal.close('Cancel click')">Cancel</button>
+  <button type="submit" class="btn btn-outline-dark">Replace</button>
+</div>
