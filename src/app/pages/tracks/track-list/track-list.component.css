@@ -13,6 +13,7 @@
     margin-top: 15px;
     padding: 0;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .track-list .track-list-item {

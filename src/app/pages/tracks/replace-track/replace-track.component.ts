@@ -68,7 +68,7 @@ export class ReplaceTrackComponent implements OnInit {
         cover_xl: ''
       }
     }
-  ]
+  ];
 
   constructor(
     public ngbActiveModal: NgbActiveModal,
