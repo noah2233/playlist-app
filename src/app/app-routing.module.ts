@@ -7,7 +7,7 @@ import { TrackComponent } from '@pages/tracks/track/track.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: ':id', component: TrackComponent },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
