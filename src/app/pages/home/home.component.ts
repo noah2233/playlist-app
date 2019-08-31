@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
 import { SearchResult } from '@common/modals';
+
+import { debounceTime, filter } from 'rxjs/operators';
+
+import { TracksService } from '@pages/tracks/tracks.service';
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
@@ -17,7 +21,8 @@ export class HomeComponent implements OnInit {
   ];
 
   constructor(
-    private _formBuilder: FormBuilder) { }
+    private _formBuilder: FormBuilder,
+    private _tracksService: TracksService) { }
 
   ngOnInit() {
     this.initSearchForm();
@@ -25,6 +30,21 @@ export class HomeComponent implements OnInit {
 
   initSearchForm() {
     this.searchForm = this._formBuilder.group({ search: new FormControl('') });
+    this.listenToSearch(this.searchForm);
   }
 
+  listenToSearch(searchForm: FormGroup) {
+    searchForm.controls['search'].valueChanges
+      .pipe(debounceTime(500))
+      .pipe(filter((val: string) => val.length > 2))
+      .subscribe((value: string) => {
+        this.search(value);
+      });
+  }
+
+  search(value: string) {
+    this._tracksService.search(value).subscribe(result => {
+      console.log(result);
+    });
+  }
 }
