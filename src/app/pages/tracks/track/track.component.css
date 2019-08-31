@@ -1,0 +1,25 @@
+.track {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.track hr {
+    width: 100%;
+}
+
+.track .track-cover {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/*#region media-queries*/
+
+@media screen and (max-width:767px) {
+    .track .track-cover {
+        max-width: 100%;
+    }
+}
+
+/*#end-region media-queries*/

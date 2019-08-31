@@ -1,5 +1,18 @@
 <div class="container">
-  <p>
-    track works!
-  </p>
+  <div class="track">
+    <img class="track-cover img-fluid" [src]="track.album.cover_xl" />
+    <hr />
+    <div class="track-details">
+      <div class="track-artist-name">
+        {{track.artist_name}}&nbsp;-&nbsp;
+      </div>
+      <div class="track-track-name">
+        {{track.track_name}}
+      </div>
+      <div class="track-album-name">
+        {{track.album.title}}
+      </div>
+    </div>
+    <div class="track-lyrics"></div>
+  </div>
 </div>
